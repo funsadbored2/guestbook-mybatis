@@ -8,7 +8,7 @@
 </head>
 <body>
 	<p>수정할 내용을 적어주세요</p>
-	<form action="${pageContext.request.contextPath/update" method="get">
+	<form action="${pageContext.request.contextPath}/update" method="get">
 	<input type = "hidden" name = "no" value="${param.no }">
 	<table border=1 width=500>
 		<tr>

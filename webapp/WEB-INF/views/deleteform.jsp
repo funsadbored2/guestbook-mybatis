@@ -8,14 +8,14 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form method="post" action="${pageContext.request.contextPath/delete">
+	<form method="post" action="${pageContext.request.contextPath}/delete">
 	<input type="hidden" name="no" value="${no }">
 	<table border = 1 width = 500>
 		<tr>
 			<td>비밀번호</td>
 			<td><input type="password" name="password"></td>
 			<td><input type="submit" value="확인"></td>
-			<td><a href="${pageContext.request.contextPath/list">메인으로 돌아가기</a></td>
+			<td><a href="${pageContext.request.contextPath}/list">메인으로 돌아가기</a></td>
 		</tr>
 	</table>
 	</form>

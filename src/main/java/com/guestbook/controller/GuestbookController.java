@@ -24,6 +24,7 @@ public class GuestbookController {
 	@RequestMapping("add")
 	public String add(GuestbookVo vo) {
 
+		System.out.println("추가");
 		 dao.add(vo);
 
 		 return "redirect:/list";
@@ -43,7 +44,7 @@ public class GuestbookController {
 	@RequestMapping(value = "delete", method = RequestMethod.POST)
 	public String delete(GuestbookVo vo) {
 		
-		dao.delete(vo.getPassword(), vo.getNo());
+		dao.delete(vo);
 
 		 return "redirect:/list";
 

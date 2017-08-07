@@ -10,7 +10,7 @@
 <title>방명록</title>
 </head>
 <body>
-	<form action="${pageContext.request.contextPath/add" method="get">
+	<form action="${pageContext.request.contextPath}/add" method="get">
 	<table border=1 width=500>
 		<tr>
 			<td>이름</td><td><input type="text" name="name"></td>
@@ -33,8 +33,8 @@
 			<td>${vo.no }</td>
 			<td>${vo.name }</td>
 			<td>${vo.regDate }</td>
-			<td><a href="${pageContext.request.contextPath/deleteform/${vo.no }"> 삭제</a></td>
-			<td><a href ="${pageContext.request.contextPath/updateform?no=${vo.no }"> 수정</a></td>
+			<td><a href="${pageContext.request.contextPath}/deleteform/${vo.no }"> 삭제</a></td>
+			<td><a href ="${pageContext.request.contextPath}/updateform?no=${vo.no }"> 수정</a></td>
 		</tr>
 		<tr>
 			<td colspan=5>${vo.content }</td>
